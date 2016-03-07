@@ -1,0 +1,38 @@
+#repoductor {
+    overflow: hidden;
+    position: relative;
+}
+video {
+    width: 100%;
+    height: auto;
+    background-color: #333;
+    position: relative;
+    overflow: hidden;
+}
+
+#controles {
+    float: left;
+    display: none;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background-color: transparent;
+    /*visibility: hidden;*/
+}
+
+/*#reproductor:hover > #controles {
+    visibility: visible;
+
+}*/
+
+#controles span {
+    cursor: pointer;
+}
+
+#controles span:hover {
+    color: cornflowerblue;
+}
+
+img.selected {
+    border: 2px solid cornflowerblue;
+}
