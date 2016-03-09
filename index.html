@@ -6,6 +6,7 @@
     <script src="http://cdn.jsdelivr.net/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="http://cdn.jsdelivr.net/bootstrap/3.3.6/css/bootstrap.min.css"></script>
     <link rel="stylesheet" href="http://cdn.jsdelivr.net/bootstrap/3.3.6/css/bootstrap-theme.min.css"></script>
+    <link href="sources/VideoJS/css/video-js.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" >
     <script src="scripts/video.js"></script>
     <meta charset="UTF-8">
@@ -33,30 +34,50 @@
                             </div>
                             <div id="reproductor">
                             <video id="video">
-                                <source src="sources/media/Roadkill_Redemption(1080p).mp4" type="video/mp4">
+                                <source src="sources/media/STEAMPUNK_FANTASY_GALILEO(720p).mp4" type="video/mp4">
                             </video>
                             <div id="controles">
                                 <span id="fastBackward" class="fa fa-fast-backward fa-lg"></span>
-                                <span id="backward" class="fa fa-backward fa-lg"></span>
                                 <span id="play" class="fa fa-play fa-lg"></span>
-                                <span id="fastForward" class="fa fa-forward fa-lg"></span>
-                                <span id="forward" class="fa fa-fast-forward fa-lg"></span>
+                                <span id="fastForward" class="fa fa-fast-forward fa-lg"></span>
                                 <span id="stop" class="fa fa-stop fa-lg"></span>
+                                <span id="mute" class="fa fa-volume-up fa-lg"></span>
+                                <span id="loop" class="fa fa-refresh fa-lg"></span>
+                                <span id="fullscreen" class="fa fa-expand fa-lg"></span>
                             </div>
                             </div>
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-
+                            <div id="reproductorAudio">
+                                <audio loop autoplay preload="none">
+                                    <source src="sources/media/Wolfmother%20-%20Dimension%20(128kbit).m4a" type="audio/mp4">
+                                </audio>
+                                <audio controls preload="none">
+                                    <source src="sources/media/Alan%20Walker%20-%20Fade.mp3" type="audio/mp3">
+                                </audio>
+                                <audio controls>
+                                    <source src="sources/media/Syn%20Cole%20-%20Feel%20Good%20%5BNCS%20Release%5D%20(192kbit).m4a" type="audio/mp4">
+                                </audio>
+                            </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-
+                            <video id="videoJS" class="video-js vjs-default-skin"
+                                controls preload="auto"
+                                poster="sources/media/CGI%203D%20Animated%20Short%20HD_%20_Roadkill%20Redemption_%20-%20by%20Karl%20Hadrika%20(BQ).jpg"
+                                data-setup='{"example_option":true}' style="width:100%;height:auto;position:relative;margin-top:20px;">
+                                <source src="sources/media/Roadkill_Redemption(1080p).mp4" type="video/mp4" />
+                                <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that
+                                    <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                                </p>
+                            </video>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <script src="sources/VideoJS/script/video.js"></script>
 </body>
 </html>
